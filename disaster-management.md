@@ -73,6 +73,7 @@ yum install -y Percona-XtraDB-Cluster-57
 ```
 ##### Configure Replication Settings
 ```
+```
 cat >>/etc/my.cnf<<EOF
  [mysqld]
    wsrep_provider=/usr/lib64/galera3/libgalera_smm.so
