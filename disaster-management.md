@@ -42,14 +42,18 @@ EOF
 ```
 mv /var/lib/mysql .
 ```
+```
 innobackupex --copy-back <path of innobackupex dir>
-
+```
+```
 chown -R mysql: /var/lib/mysql
+```
+```
 service mysql@bootstrap start
 
 ```
 
-This will get the cluster started and now follow the steps to add 2nd server from as below.
+## This will get the cluster started and now follow the steps to add 2nd server from as below.
 
 
 ### On Second node
@@ -72,7 +76,7 @@ yum install -y https://repo.percona.com/yum/percona-release-latest.noarch.rpm
 yum install -y Percona-XtraDB-Cluster-57
 ```
 ##### Configure Replication Settings
-```
+
 ```
 cat >>/etc/my.cnf<<EOF
  [mysqld]
