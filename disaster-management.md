@@ -92,7 +92,7 @@ EOF
 ##### Start mysql to join the cluster
 ```
 systemctl start mysql
-  
+``` 
   
   # Please note the logins will be same as it was when time of backup.
   
